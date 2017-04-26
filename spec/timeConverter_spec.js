@@ -16,4 +16,17 @@ describe("A program that converts time", () => {
 			.toBe("35.5 hours is equivalent to 127800 seconds.");
 	});
 
+	it("Can convert a number of seconds into equivalentt time in hours", () => { 
+
+		expect(tc.secondsToHours(0))
+			.toBe("Invalid time entry"); 
+		expect(tc.secondsToHours(-88))
+			.toBe("Invalid time entry"); 
+		expect(tc.secondsToHours(8000))
+			.toBe("8000 seconds is equal to 2 hour(s) 13 minutes and 20 seconds.");
+		expect(tc.secondsToHours(6969))
+			.toBe("6969 seconds is equal to 1 hour(s) 56 minutes and 9 seconds.");	 
+
+	});
+
 }); 
