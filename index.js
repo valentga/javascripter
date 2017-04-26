@@ -1,17 +1,19 @@
 
+class TimeConvert
+{	
 	/*
 	This function converts number of hours into an equivalent number of seconds. 
 	
 	@ param hours    The number of hours to convert into seconds.
 	@ return result  A string output of the equivalent number of seconds 
 	*/
-	function hoursToSeconds(hours)
+	hoursToSeconds(hours)
 	{
 		//declartation of an array
 		var textToPrint = ['This', 'function', 'will', 'convert', 'a', 'time', 'in', 'hours', 'to', 'a', 'time', 'in', 'seconds'];
 
 		//loop trough array
-		for(i =0; i < textToPrint.length; i++)
+		for(let i =0; i < textToPrint.length; i++)
 		{
 			process.stdout.write(textToPrint[i] + " ");
 		}
@@ -48,13 +50,13 @@
 	@ param numberOfSeconds      The number of seconds to convert to hours
 	@ return result              A string output of the equivalent time in hours, minutes, and seconds 
 	*/
-	function secondsToHours(numberOfSeconds)
+	secondsToHours(numberOfSeconds)
 	{
 		//declartation of an array
 		var textToPrint = ['This', 'function', 'will', 'convert', 'a', 'time', 'in', 'seconds', 'to', 'a', 'time', 'in', 'hours'];
 
 		//loop trough array
-		for(i =0; i < textToPrint.length; i++)
+		for(let i =0; i < textToPrint.length; i++)
 		{
 			process.stdout.write(textToPrint[i] + " ");
 		}
@@ -96,11 +98,9 @@
 		console.log(result);
 		return result; 
 	}
+}	
 
 
-module.exports = 
-{
-	hoursToSeconds: hoursToSeconds,
+module.exports = TimeConvert; 
 
-	secondsToHours: secondsToHours, 
-}
+
