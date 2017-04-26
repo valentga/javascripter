@@ -1,4 +1,6 @@
-var tc = require("../index");
+var TimeConvert = require("../index");
+var tc = new TimeConvert();
+console.log("tc ", typeof tc.hoursToSeconds);
 
 describe("A program that converts time", () => {
 
