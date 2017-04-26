@@ -7,6 +7,16 @@
 	*/
 	function hoursToSeconds(hours)
 	{
+		//declartation of an array
+		var textToPrint = ['This', 'function', 'will', 'convert', 'a', 'time', 'in', 'hours', 'to', 'a', 'time', 'in', 'seconds'];
+
+		//loop trough array
+		for(i =0; i < textToPrint.length; i++)
+		{
+			process.stdout.write(textToPrint[i] + " ");
+		}
+		console.log();
+
 		//declartaion of constants
 		const NUMBER_OF_SECONDS_IN_MINUTE = 60; 
 		const NUMBER_OF_MINUTE_IN_HOUR = 60; 
@@ -28,6 +38,7 @@
 			result = hours + " hours is equivalent to " + numberOfSeconds + " seconds."; 
 		}
 
+		console.log(result);
 		return result; 
 	}
 
@@ -39,6 +50,16 @@
 	*/
 	function secondsToHours(numberOfSeconds)
 	{
+		//declartation of an array
+		var textToPrint = ['This', 'function', 'will', 'convert', 'a', 'time', 'in', 'seconds', 'to', 'a', 'time', 'in', 'hours'];
+
+		//loop trough array
+		for(i =0; i < textToPrint.length; i++)
+		{
+			process.stdout.write(textToPrint[i] + " ");
+		}
+		console.log();
+
 		//declaration of constants
 		const NUMBER_OF_SECONDS_IN_MINUTE = 60; 
 		const NUMBER_OF_MINUTE_IN_HOUR = 60; 
@@ -72,6 +93,7 @@
 			result = numberOfSeconds + " seconds is equal to " + hours + " hour(s) " + minutes + " minutes and " + seconds + " seconds."
 		}
 
+		console.log(result);
 		return result; 
 	}
 
